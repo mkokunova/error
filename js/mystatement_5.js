@@ -1,4 +1,4 @@
-// It seems there is something in my nose. 
+// It seems there is something in my nose.
 // And there is also some tightness in my throat.
 
 let msg = 'How many frogs can you swallow?:'

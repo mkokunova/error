@@ -16,14 +16,16 @@ function getMoonPhase(year, month, day)
     ++month;
     c = 365.25 * year;
     e = 30.6 * month;
-    jd = c + e + day - 694039.09; //jd is total days elapsed
-    jd /= 29.5305882; //divide by the moon cycle
-    b = parseInt(jd); //int(jd) -> b, take integer part of jd
-    jd -= b; //subtract integer part to leave fractional part of original jd
-    b = Math.round(jd * 8); //scale fraction from 0-8 and round
+    jd = c + e + day - 694039.09;
+    jd /= 29.5305882;
+    b = parseInt(jd);
+    jd -= b;
+    b = Math.round(jd * 8);
     if (b >= 8 ) {
-        b = 0; //0 and 8 are the same so turn 8 into 0
+        b = 0;
     }
+    // It's absolutely impossible for me to start treatment this year.
+    // Then it will continue in the next year and thus will be disrupted.
 
     // 0 => New Moon
     // 1 => Waxing Crescent Moon
@@ -33,7 +35,6 @@ function getMoonPhase(year, month, day)
     // 5 => Waning Gibbous Moon
     // 6 => Last Quarter Moon
     // 7 => Waning Crescent Moon
-
     return b;
 }
 

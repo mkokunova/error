@@ -1,3 +1,5 @@
+
+
 // I'll leave where the clock strickes.
 
 function time() {
@@ -5,6 +7,7 @@ function time() {
   var sec = d.getSeconds();
   var min = d.getMinutes();
   var hour = d.getHours();
+
 
 // There is no strike
   if (sec == 0) {
@@ -14,7 +17,9 @@ function time() {
     min = 59
     hour -= 1
   }
+
   console.log(("0" + hour).substr(-2) + ":" + ("0" + min).substr(-2) + ":" + ("0" + sec).substr(-2));
+
 }
 
 time();

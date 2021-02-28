@@ -1,5 +1,6 @@
-// I'm writing in the presence of the glass which is on the table in front of me, 2 sm away from the sheet of paper I'm writing on.
-// Near there is a lamp on the wall. The light is on.
+// Today is October 31,2020 15:51
+// I'm writing in the presence of the glass which is on the table in front of me,
+// 2 sm away from the sheet of paper I'm writing on. Near there is a lamp on the wall. The light is on.
 
 let consoleEl = document.getElementById("console");
 let things = ['Lamp', 'Table', 'Glass', 'whitePaper'];
